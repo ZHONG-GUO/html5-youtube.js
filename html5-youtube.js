@@ -98,11 +98,14 @@
 			var toNum = Number(string);
 			if (!isNaN(toNum) && typeof toNum === 'number') {
 				return Number(string);
-			} else if (string === 'true') {
+			}
+			else if (string === 'true') {
 				return true;
-			} else if (string === 'false') {
+			}
+			else if (string === 'false') {
 				return false;
-			} else {
+			}
+			else {
 				return string;
 			}
 		}
