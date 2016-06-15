@@ -94,11 +94,6 @@
 	 * @returns {Number or String}
 	 */
 	Player._parseDataAttribute = function(string) {
-		var isNaN = function(val){
-			// NaN is the only value to return false when compared to itself
-			return val !== val;
-		};
-
 		if (typeof(string) === 'string'){
 			var toNum = Number(string);
 			if (!isNaN(toNum) && typeof toNum === 'number'){
