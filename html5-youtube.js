@@ -96,18 +96,22 @@
 	Player._parseDataAttribute = function(string) {
 		if (typeof string === 'string') {
 			var toNum = Number(string);
+
+			var result;
 			if (!isNaN(toNum) && typeof toNum === 'number') {
-				return Number(string);
+				result = Number(string);
 			}
 			else if (string === 'true') {
-				return true;
+				result = true;
 			}
 			else if (string === 'false') {
-				return false;
+				result = false;
 			}
 			else {
-				return string;
+				result = string;
 			}
+
+			return result;
 		}
 	};
 
@@ -558,12 +562,14 @@
 	 * @see https://developers.google.com/youtube/iframe_api_reference#getAvailablePlaybackRates
 	 */
 	prototype.getAvailablePlaybackRates = function() {
+		var rates;
 		if (this.player) {
-			return this.player.getAvailablePlaybackRates();
+			rates = this.player.getAvailablePlaybackRates();
 		}
 		else {
-			return undefined;
+			rates = undefined;
 		}
+		return rates;
 	};
 
 	// ----------------------------------------------------------------
