@@ -279,7 +279,7 @@
 		var width;
 		var height = el.clientHeight;
 		if (height) {
-			width  = el.clientWidth;
+			width = el.clientWidth;
 		}
 		else {
 			height = 390;
