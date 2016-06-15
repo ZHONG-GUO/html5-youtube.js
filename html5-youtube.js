@@ -1,6 +1,9 @@
 // @license youtube.js by Ginpei https://github.com/ginpei/youtube.js MIT License
 
+/* eslint no-underscore-dangle:off */
+/* eslint comma-dangle:[error,never] */
 /* global YT */
+
 (function(window, document) {
 	/**
 	 * The interface.
@@ -85,7 +88,7 @@
 		var isNaN = function(val){
 			// NaN is the only value to return false when compared to itself
 			return val !== val;
-		}
+		};
 
 		if (typeof(string) === 'string'){
 			var toNum = Number(string);
@@ -99,7 +102,7 @@
 				return string;
 			}
 		}
-	}
+	};
 
 	/**
 	 * Load YouTube API script.
@@ -259,8 +262,8 @@
 		var videoId = options.id || el.getAttribute('data-youtube-videoid');
 		var playerVars = {};
 		ytPlayerVars.forEach(function(propName){
-			playerVars[propName] = this._getPlayerVarsOption(options, propName)
-		}.bind(this))
+			playerVars[propName] = this._getPlayerVarsOption(options, propName);
+		}.bind(this));
 
 		var width;
 		var height = el.clientHeight;
