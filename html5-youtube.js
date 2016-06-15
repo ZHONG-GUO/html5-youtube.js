@@ -94,9 +94,9 @@
 	 * @returns {Number or String}
 	 */
 	Player._parseDataAttribute = function(string) {
-		if (typeof string === 'string'){
+		if (typeof string === 'string') {
 			var toNum = Number(string);
-			if (!isNaN(toNum) && typeof toNum === 'number'){
+			if (!isNaN(toNum) && typeof toNum === 'number') {
 				return Number(string);
 			} else if (string === 'true') {
 				return true;
@@ -265,7 +265,7 @@
 
 		var videoId = options.id || el.getAttribute('data-youtube-videoid');
 		var playerVars = {};
-		ytPlayerVars.forEach(function(propName){
+		ytPlayerVars.forEach(function(propName) {
 			playerVars[propName] = this._getPlayerVarsOption(options, propName);
 		}.bind(this));
 
