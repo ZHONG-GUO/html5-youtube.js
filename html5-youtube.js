@@ -330,7 +330,7 @@
 			'onPlaybackQualityChange',
 			'onPlaybackRateChange',
 			'onReady',
-			'onStateChange',
+			'onStateChange'
 		].forEach(function(type, index) {
 			events[type] = Player.bind(this[type], this);
 		}.bind(this));
