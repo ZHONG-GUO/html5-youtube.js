@@ -44,7 +44,14 @@
 	 * They are same as YouTube API's `YT.PlayerState`.
 	 * @see https://developers.google.com/youtube/iframe_api_reference#onStateChange
 	 */
-	Player.PlayerState = { UNSTARTED:-1, ENDED:0, PLAYING:1, PAUSED:2, BUFFERING:3, CUED:5 };
+	Player.PlayerState = {
+		UNSTARTED: -1,
+		ENDED: 0,
+		PLAYING: 1,
+		PAUSED: 2,
+		BUFFERING: 3,
+		CUED: 5
+	};
 
 	/**
 	 * Proxy for `Function#bind`.
