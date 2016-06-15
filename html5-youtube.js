@@ -140,8 +140,8 @@
 
 			// set callbacks
 			window.onYouTubeIframeAPIReady = Player.bind(function() {
-				callbacks.forEach(function(callback, index) {
-					callback();
+				callbacks.forEach(function(callback2, index) {
+					callback2();
 				});
 				delete this._ytCallbacks;
 				this._ytStatus = 2;
