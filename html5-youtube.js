@@ -94,7 +94,7 @@
 	 * @returns {Number or String}
 	 */
 	Player._parseDataAttribute = function(string) {
-		if (typeof(string) === 'string'){
+		if (typeof string === 'string'){
 			var toNum = Number(string);
 			if (!isNaN(toNum) && typeof toNum === 'number'){
 				return Number(string);
