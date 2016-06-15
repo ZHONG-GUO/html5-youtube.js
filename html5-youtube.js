@@ -5,6 +5,8 @@
 /* global YT */
 
 (function(window, document) {
+	var Player;
+
 	/**
 	 * The interface.
 	 */
@@ -15,7 +17,7 @@
 	/**
 	 * The constructor.
 	 */
-	var Player = window.youtube.Player = function(options) {
+	Player = window.youtube.Player = function(options) {
 		// define property's getters and setters if they have not yet
 		if (Player._undefinedProperties) {
 			Player._execDefineProperties();
